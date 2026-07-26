@@ -9,6 +9,7 @@ import {
   FaNodeJs,
   FaJava,
   FaPython,
+  FaJavascript,
   FaGitAlt,
   FaGithub,
   FaWhatsapp,
@@ -16,7 +17,7 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 
-import { SiTailwindcss, SiExpress, SiMongodb, SiVercel } from "react-icons/si";
+import { SiTailwindcss, SiExpress, SiMongodb, SiVercel,SiFirebase,SiRailway,SiRender } from "react-icons/si";
 import projectImg from "../assets/pasteappimage.png";
 import organizenotes from "../assets/organizenotes.png"
 import ecommerce from "../assets/e-commerce.png"
@@ -70,15 +71,15 @@ const sendEmail = (e) => {
     ],
     languages: [
       { name: "Java", icon: FaJava, color: "#007396" },
-      { name: "Python", icon: FaPython, color: "#3776AB" },
+      { name: "Javascript", icon:FaJavascript, color: "#3776AB" },
     ],
     tools: [
       { name: "Git", icon: FaGitAlt, color: "#F05032" },
       { name: "GitHub", icon: FaGithub, color: "#f2efefff" },
       { name: "Vercel", icon: SiVercel, color: "#f5f2f2ff" },
-      { name: "Firebase", icon: SiVercel, color: "rgb(243, 203, 203)" },
-      { name: "Render", icon: SiVercel, color: "rgb(173, 171, 171)" },
-      { name: "Railway", icon: SiVercel, color: "rgb(179, 129, 129)" },
+      { name: "Firebase", icon: SiFirebase, color: "rgb(243, 203, 203)" },
+      { name: "Render", icon: SiRender, color: "rgb(173, 171, 171)" },
+      { name: "Railway", icon: SiRailway, color: "rgb(179, 129, 129)" },
 
     ],
   };
