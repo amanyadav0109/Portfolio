@@ -214,7 +214,7 @@ html, body {
   padding: 10px;
   box-sizing: border-box;
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(20px);
   transition: box-shadow 0.4s ease, transform 0.4s ease;
   animation: fadeUp 1.2s ease forwards;
 }
@@ -234,7 +234,7 @@ html, body {
 /* --- Divider --- */
 .divider {
   width: 2px;
-  height: 0;
+  height: 1px;
   background: linear-gradient(to bottom, transparent, var(--text-color), transparent);
   margin: 0 40px; /* Better spacing around the line */
   animation: growLine 1.2s ease forwards;

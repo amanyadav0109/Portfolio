@@ -18,7 +18,9 @@ import {
 
 import { SiTailwindcss, SiExpress, SiMongodb, SiVercel } from "react-icons/si";
 import projectImg from "../assets/pasteappimage.png";
-import amanPhoto from "../assets/Gemini_Generated_Image_hbfikzhbfikzhbfi (1).png";
+import organizenotes from "../assets/organizenotes.png"
+import ecommerce from "../assets/e-commerce.png"
+import amanPhoto from "../assets/profilephoto.jpeg";
 import "./Navbar.css";
 
 function Navbar() {
@@ -74,6 +76,10 @@ const sendEmail = (e) => {
       { name: "Git", icon: FaGitAlt, color: "#F05032" },
       { name: "GitHub", icon: FaGithub, color: "#f2efefff" },
       { name: "Vercel", icon: SiVercel, color: "#f5f2f2ff" },
+      { name: "Firebase", icon: SiVercel, color: "rgb(243, 203, 203)" },
+      { name: "Render", icon: SiVercel, color: "rgb(173, 171, 171)" },
+      { name: "Railway", icon: SiVercel, color: "rgb(179, 129, 129)" },
+
     ],
   };
   useEffect(() => {
@@ -84,7 +90,7 @@ const sendEmail = (e) => {
   }, []);
 
   return (
-    // Forced "dark" class here
+    
     <div className="container dark">
       <div className="Header">
         <div className="left-section">
@@ -142,7 +148,7 @@ const sendEmail = (e) => {
           >
             Get Resume
           </button>
-          {/* Removed the Theme Toggle Button */}
+         
         </div>
       </div>
       <div className="Middle-section-content">
@@ -248,45 +254,60 @@ const sendEmail = (e) => {
                 </a>
               </div>
             </div>
-            {/* <div className="project-card">
+            <div className="project-card">
               <div className="card-image">
-                <img src="/project.png" alt="project" />
+                <img src={ecommerce} alt="project" />
               </div>
 
               <div className="card-content">
-                <p className="project-title">▶ RazorPay</p>
+                <p className="project-title">▶ E-commerce</p>
 
                 <div className="tech">
                   <span>HTML</span>
                   <span>Tailwind CSS</span>
                   <span>JS</span>
+                  <span>React.js</span>
+                  <span>Node.js</span>
+                  <span>Mongodb</span>
+                  <span>Express.js</span>
+                 
                   
                 </div>
 
-                <a href="#" className="btn">
+                <a href="https://onecart-frontend03.onrender.com" 
+                 target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn">
                   View Project →
                 </a>
               </div>
             </div>
             <div className="project-card">
               <div className="card-image">
-                <img src="/project.png" alt="project" />
+                <img src={organizenotes} alt="project" />
               </div>
 
               <div className="card-content">
-                <p className="project-title">▶ Doorstep Tailer</p>
+                <p className="project-title">▶ OrganizeNotes</p>
 
                 <div className="tech">                
+                 <span>HTML</span>
+                  <span>Tailwind CSS</span>
+                  <span>JS</span>
+                  <span>React.js</span>
                   <span>Node.js</span>
-                  <span>Express</span>
-                  <span>Mongodb</span>
+                  <span>MySql</span>
+                  <span>Express.js</span>
                 </div>
 
-                <a href="#" className="btn">
+                <a href="https://oraganize-notes.vercel.app" 
+                 target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn">
                   View Project →
                 </a>
               </div>
-            </div> */}
+            </div>
           </div>
         </section>
         <section className="contact-section" id="contact">
