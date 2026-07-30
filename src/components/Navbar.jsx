@@ -9,13 +9,15 @@ import {
   FaNodeJs,
   FaJava,
   FaPython,
-  FaJavascript,
   FaGitAlt,
   FaGithub,
   FaWhatsapp,
   FaEnvelope,
   FaLinkedin,
 } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
+import { SiMysql } from "react-icons/si";
+import { SiGeeksforgeeks } from "react-icons/si";
 
 import { SiTailwindcss, SiExpress, SiMongodb, SiVercel,SiFirebase,SiRailway,SiRender } from "react-icons/si";
 import projectImg from "../assets/pasteappimage.png";
@@ -68,10 +70,11 @@ const sendEmail = (e) => {
       { name: "Node.js", icon: FaNodeJs, color: "#339933" },
       { name: "Express", icon: SiExpress, color: "#47A248" },
       { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+      { name: "MySql", icon: SiMysql, color: "#3b5985" },
     ],
     languages: [
       { name: "Java", icon: FaJava, color: "#007396" },
-      { name: "Javascript", icon:FaJavascript, color: "#3776AB" },
+      { name: "Javascript", icon:IoLogoJavascript, color: "#3776AB" },
     ],
     tools: [
       { name: "Git", icon: FaGitAlt, color: "#F05032" },
@@ -355,6 +358,16 @@ const sendEmail = (e) => {
                     <span>GitHub</span>
                   </a>
                 </li>
+                 <li>
+                  <a
+                    href="https://www.geeksforgeeks.org/profile/amanyada66ds"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <SiGeeksforgeeks />
+                    <span>GeekForGeeks</span>
+                  </a>
+                </li>
                 <li>
                   <a
                     href="https://linkedin.com/in/amanyadav2005"
@@ -411,9 +424,7 @@ const sendEmail = (e) => {
                   required
                 ></textarea>
 
-                {/* <button type="submit">
-                  <span>Send</span> ✈
-                </button> */}
+               
                 <button type="submit" disabled={isSending}>
         {isSending ? "Sending..." : "Send Message"}
       </button>
@@ -423,12 +434,12 @@ const sendEmail = (e) => {
         </section>
         <footer className="footer">
           <div className="footer-container">
-            {/* LEFT */}
+            
             <p className="footer-text">
               © {new Date().getFullYear()} Aman Yadav. All rights reserved.
             </p>
 
-            {/* RIGHT */}
+           
             <div className="footer-icons">
               <a
                 href="https://github.com/amanyadav0109"
@@ -436,6 +447,13 @@ const sendEmail = (e) => {
                 rel="noreferrer"
               >
                 <FaGithub />
+              </a>
+               <a
+                href="https://www.geeksforgeeks.org/profile/amanyada66ds"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <SiGeeksforgeeks />
               </a>
               <a
                 href="https://linkedin.com/in/amanyadav2005"
