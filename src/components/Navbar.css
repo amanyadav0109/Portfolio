@@ -211,18 +211,19 @@ body {
 
 /* --- Image Container --- */
 .image {
-  flex: 0 0 40vw; /* Using flex-basis for cleaner desktop sizing */
+  flex: 0 0 40vw; 
   max-width: 450px;
- height: auto;  /* Slightly reduced for better framing */
+ height: auto; 
  aspect-ratio: 4 / 5;
   overflow: hidden;
-  border-radius: 12px; /* Increased for a modern look */
+  border-radius: 12px; 
   display: flex;
   padding: 10px;
   box-sizing: border-box;
   opacity: 0;
   transform: translateY(20px);
-  transition: box-shadow 0.4s ease, transform 0.4s ease;
+    transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
   animation: fadeUp 1.2s ease forwards;
 }
 
@@ -231,12 +232,12 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: top center;
-  border-radius: 8px; /* Inner radius for clean edges */
+  border-radius: 8px; 
   transition: transform 0.6scubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .image:hover img {
-  transform: scale(1.05); /* Slightly more subtle scale */
+   transform: scale(1.05);
 }
 
 /* --- Divider --- */
